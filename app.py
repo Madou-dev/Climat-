@@ -51,7 +51,7 @@ Cette étude permet également de mieux comprendre les impacts potentiels du ré
 @st.cache_data
 
 def load_data():
-    df = pd.read_csv("../data/Africa_climate_change.csv")
+    df = pd.read_csv("data/Africa_climate_change.csv")
 
     # Gestion des valeurs manquantes
     df['PRCP'] = df['PRCP'].fillna(df['PRCP'].median())
